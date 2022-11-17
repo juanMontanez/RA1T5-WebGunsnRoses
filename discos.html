@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=" UTF-8">
+    <title>Guns 'n Roses</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+
+    <!-- Libreria jQuery -->
+    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+
+
+    
+        <script type="text/javascript">
+            const imagenes = [
+                {
+                    src: 'https://gunsnrosesmusica.com/img/albums/livelikeasuicide.jpg',
+                    alt: 'El Álbum Live ?!*@ Like a Suicide de Guns and Roses fue editado en 1986 por UZI Suicide, y contiene 4 Canciones. Haz click en el tema que desees consultar y podrás ver su letra en inglés y traducida al castellano.',
+                    nombre: 'Live ?!*@ Like a Suicide',
+                    año: 1986
+                },
+                {
+                    src: 'https://gunsnrosesmusica.com/img/albums/appetitefordestruction.jpg',
+                    alt: 'El Álbum Appetite for Destruction de Guns and Roses fue editado en 1987 por Geffen Records, y contiene 12 Canciones. Haz click en el tema que desees consultar y podrás ver su letra en inglés y traducida al castellano.',
+                    nombre: 'Appetite for Destruction',
+                    año: 1987
+                },
+                {
+                    src: 'https://gunsnrosesmusica.com/img/albums/gnrlies.jpg',
+                    alt: 'El Álbum G N R Lies de Guns and Roses fue editado en 1988 por Geffen Records, y contiene 8 Canciones. ',
+                    nombre: 'G N R Lies',
+                    año: 1988
+                },
+                {
+                    src: 'https://gunsnrosesmusica.com/img/albums/useyourillusioni.jpg',
+                    alt: 'El Álbum Use Your Illusion I de Guns and Roses fue editado en 1991 por Geffen Records, y contiene 16 Canciones. ',
+                    nombre: 'Use Your Illusion I',
+                    año: 1991
+                },
+                {
+                    src: 'https://gunsnrosesmusica.com/img/albums/useyourillusionii.jpg',
+                    alt: 'El Álbum Use Your Illusion II de Guns and Roses fue editado en 1991 por Geffen Records, y contiene 14 Canciones. ',
+                    nombre: 'Use Your Illusion II',
+                    año: 1991
+                },
+                {
+                    src: 'https://gunsnrosesmusica.com/img/albums/thespaghettiincident.jpg',
+                    alt: 'El Álbum The Spaghetti Incident? de Guns and Roses fue editado en 1993 por Geffen Records, y contiene 12 Canciones. ',
+                    nombre: 'The Spaghetti Incident?',
+                    año: 1993
+                },
+                {
+                    src: 'https://gunsnrosesmusica.com/img/albums/liveera8793.jpg',
+                    alt: 'El Álbum Live Era: 87-93 de Guns and Roses fue editado en 1999 por Geffen Records, y contiene 22 Canciones. ',
+                    nombre: 'Live Era: 87-93',
+                    año: 1999
+                },
+                {
+                    src: 'https://gunsnrosesmusica.com/img/albums/greatesthits.jpg',
+                    alt: 'El Álbum Greatest Hits de Guns and Roses fue editado en 2004 por Geffen Records, y contiene 14 Canciones. ',
+                    nombre: 'Greatest Hits',
+                    año: 2004
+                },
+                {
+                    src: 'https://gunsnrosesmusica.com/img/albums/chinesedemocracy.jpg',
+                    alt: 'El Álbum Chinese Democracy de Guns and Roses fue editado en 2008 por Geffen Records, y contiene 14 Canciones. ',
+                    nombre: 'Chinese Democracy',
+                    año: 2008
+                }
+            ];
+
+            function renderizarGaleria(imagenes) {
+                let html = '';
+
+                imagenes.forEach(function (imagen) {
+                    html += `
+      <div class="galeria-item">
+        <h2>Album: ${imagen.nombre}</h2>
+        <h3>Año: ${imagen.año}</h3><br>
+        <img src="${imagen.src}" alt="${imagen.alt}" hight="100px" width="100px" />
+
+      </div>
+    `;
+                });
+
+                $('#galeria').html(html);
+            }
+            
+            $(function () {
+                renderizarGaleria(imagenes);
+            });
+        </script>
+<div id="galeria">
+
+    </div>
+</body>
+
+</html>

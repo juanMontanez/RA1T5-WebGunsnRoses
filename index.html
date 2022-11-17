@@ -1,0 +1,58 @@
+<!-- saved from url=(0071)https://www.vatican.va/holy_father/special_features/hf_jp_ii_xxv_en.htm -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>Guns 'n Roses</title>
+    <link rel="icon" href="favicon.png">
+    
+    <script src="js/all.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+
+    <!-- Libreria jQuery -->
+    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <!-- Acción sobre el botón con id=boton y actualizamos el div con id=capa -->
+    <script type="text/javascript">
+        function cargarContenidos(urlDatos) {
+            $.get(urlDatos, function (data) {
+                $('#contenido').html(data);
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <img src="header.jpg" />
+        </div>
+        <!-- start nav -->
+        <div id="menu">
+
+            <!-- start menu -->
+            <ul>
+                <li><a href="index.html"><i class="fa-thin fa-compact-disc"></i>Inicio</a></li>
+                <li><a href="javascript:cargarContenidos('biografia.html')">Biografía</a></li>
+                <li><a href="javascript:cargarContenidos('discos.html')">Discografía</a></li>
+            </ul>
+            <!-- end menu -->
+        </div>
+        <!-- end nav -->
+        <div id="contenido">
+
+            <div id="portada">
+
+                <img src="group.png" />
+            </div>
+        </div>
+        <div id="pie">
+            <p><i class="fa-thin fa-compact-disc"></i>Copyright © 2022 Guns N' Roses by Juan Montañez Palomino</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

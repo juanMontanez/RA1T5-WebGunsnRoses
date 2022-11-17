@@ -1,0 +1,155 @@
+body {
+  background: #000;;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "menu"
+    "contenido"
+    "pie";
+  font-family: "Franklin Gothic Medium", sans-serif;
+  align-items: start;
+}
+img {
+  width: 700px;
+}
+
+#header {
+  grid-area: header;
+  display: grid;
+  grid-template-areas: "header";
+  align-self: center;
+  margin: 0px auto;
+  width: 900px auto;
+  top: 10px auto;
+  bottom: 0px auto;
+  left: 0px auto;
+  right: 0px auto;
+  height: 110px;
+  position:sticky;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  width: 660px;
+}
+
+#menu {
+  grid-area: menu;
+  display: flex;
+  margin: 0px auto;
+  height: 35px;
+  text-align: center;
+  align-items: center;
+  position:sticky;
+}
+#portada{
+  grid-area: contenido;
+  display: grid;
+  align-items: center;
+  align-self: center;
+  margin: 0px auto;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+#contenido {
+  grid-area: contenido;
+  display: grid;
+  align-items: center;
+  align-self: center;
+  margin: 0px auto;
+  padding: 10px;
+  color: #ffffff;
+  min-width: 50ch;
+  max-width: 75ch;
+  text-align: justify;
+  line-height: 1.5em;
+  word-spacing: 0.16em;
+  letter-spacing: 0.12em;
+  border: 1px solid;
+  border-color: #fac53f;
+  background-color: rgb(56, 56, 56);
+  
+}
+#pie {
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  background-color:#000000;
+}
+input {
+  margin: 55px;
+}
+
+#menu li a{
+  grid-area: menu;
+  background-color:#000000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: flex;
+  height: 15px;
+  align-items: center;
+  left: 180px;
+  text-align: center;
+}
+
+#menu li a:hover {
+  border: 1px solid;
+  border-color: #fac53f;
+  
+}
+#menu > li {
+  float: left;
+}
+#menu li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+#menu li:hover > ul {
+  display: block;
+}
+#menu li ul li {
+  position: relative;
+}
+#menu li ul li ul {
+  right: -140px;
+  top: 0px;
+}
+#galeria {
+  display:contents;
+  text-align:left;
+  font-size: 10px;
+  margin-left:0px auto ;
+  vertical-align:auto;
+  width: 30px;
+  
+}
+.galeria-item{
+  display:contents;
+  width: 30px;
+  height: 100px;
+  top: 100px;
+  bottom: 10px;
+  align-items: grid;
+  margin: 10px;
+  color:#ffffff;
+}
